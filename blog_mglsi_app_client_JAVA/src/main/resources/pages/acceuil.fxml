@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+    <children>
+        <Label fx:id="bienvenuelbl" contentDisplay="BOTTOM" layoutX="-2.0" layoutY="-5.0" lineSpacing="10.0" prefHeight="53.0" prefWidth="606.0" style="-fx-background-color: #3498DB;" textFill="#eeebeb" wrapText="true">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+      <JFXButton fx:id="validerbtn" layoutX="412.0" layoutY="270.0" onAction="#connexion" prefHeight="38.0" prefWidth="86.0" style="-fx-background-color: #8A2BE2;" text="Valider">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="usertxt" layoutX="372.0" layoutY="135.0" prefHeight="25.0" prefWidth="181.0" promptText="\@Username" />
+      <JFXPasswordField fx:id="pwdtxt" layoutX="372.0" layoutY="215.0" prefHeight="25.0" prefWidth="181.0" promptText="Password" />
+      <ImageView fitHeight="199.0" fitWidth="200.0" layoutX="61.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/images/undraw_unlock_24mb.png" />
+         </image>
+      </ImageView>
+    </children>
+    <padding>
+        <Insets bottom="600.0" left="400.0" right="400.0" top="600.0" />
+    </padding>
+</AnchorPane>
